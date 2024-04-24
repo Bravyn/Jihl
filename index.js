@@ -1,7 +1,8 @@
+
 let state  = {};//game state
 
 
-newGama();
+newGame();
 
 function newGame() {
     //game state init
@@ -22,10 +23,14 @@ function newGame() {
 }
 
 
-const canvas  = getElementById("game");
+const canvas  = document.getElementById("game");
 canvas.width  = window.innerWidth;
 canvas.height = window.innerHeight;
 const ctx = canvas.getContext("2d");
+
+ctx.fillStyle = "blue";
+
+ctx.fillRect(200, 200, 440, 320)
 
 
 
