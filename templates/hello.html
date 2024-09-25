@@ -1,9 +1,20 @@
 <!doctype html>
-<title>Hello from Flask</title>
+<html>
+<head>
+    <title>Jihl</title>
+    <link rel = "stylesheet" href="{{ url_for('static', filename = 'style.css') }}">
+</head>
+<body>
 {% if person %}
-  {% for i in range(0, 4):%}
-  <h1>Hello {{person}} </h1>
-{%endfor%}
+  <h1>Hello {{person.capitalize()}} </h1>
 {% else %}
-  <h1>Hello, World!</h1>
+  <h1>Marnt</h1>
 {% endif %}
+<div class="form">
+    <form method="POST" class="form">
+        <input type = "text" name = "inputBox" placeholder="Type your name here">
+        <input type="submit" value = "Get Started">
+    </form>
+</div>
+</body>
+</html>

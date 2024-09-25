@@ -1,0 +1,20 @@
+h1{
+    font-size: 4em;
+    text-align: center;
+    color: blue;
+    text-decoration: underline;
+
+}
+
+.form{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: beige;
+    padding: 4px;
+}
+
+.form button{
+    color: #fff;
+    background-color: black;
+}
