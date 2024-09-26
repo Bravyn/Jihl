@@ -1,15 +1,15 @@
 from flask import Flask, render_template, request
-
+from taglines import taglines
 
 app = Flask(__name__)
 
 @app.route('/', methods = ['GET', 'POST'])
 @app.route('/hello/<name>', methods = ['GET', 'POST'])
-def index(name = None):
+def index(tagline = None):
     if request.method == 'POST':
         input_val = request.form.get('inputBox')
         return render_template("hello.html", person = input_val)
-    return render_template("hello.html", person = name)
+    return render_template("hello.html", tagline = taglines)
 
 
 

@@ -32,26 +32,14 @@
             <!-- Define each of the slides
          and write the content -->
 
+         {% for slide in range(0,3)%}
+
             <div class="slide">
                 <h1 class="slide-number">
-                    GeeksforGeeks
+                   {{tagline[0]}}
                 </h1>
             </div>
-            <div class="slide">
-                <h1 class="slide-number">
-                    A computer science portal
-                </h1>
-            </div>
-            <div class="slide">
-                <h1 class="slide-number">
-                    This is an example of
-                </h1>
-            </div>
-            <div class="slide">
-                <h1 class="slide-number">
-                    Slideshow with HTML and CSS only
-                </h1>
-            </div>
+        {% endfor %}
         </div>
     </div>
        
