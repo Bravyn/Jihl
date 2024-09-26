@@ -113,7 +113,7 @@ section{
     padding-top: 1em;
     width: 50%;
     line-height: 7.618em;
-    background: linear-gradient(to right, blue, rgb(61, 105, 226));
+    background: linear-gradient(to right, blue, rgb(106, 143, 243));
     height:100vh;
     overflow: hidden;
     color: white;
@@ -125,7 +125,7 @@ section{
 .sect2{
     flex-direction: column;
     background: linear-gradient(to left, blue, white);
-    line-height: 1.5em;
+    line-height: 2em;
     color: #000;
     padding-bottom: 6em;
     font-family: "Varela Round","Helvetica Neue",Arial,sans-serif;
@@ -169,3 +169,89 @@ p{
   .button-31:focus {
     opacity: .75;
   }
+
+  body {
+    padding: 5%;
+    padding-top: 2%;
+    text-align: center;
+    font-size: 50;
+}
+
+/* Styling the area of the slides */
+#slideshow {
+    overflow: hidden;
+    height: 510px;
+    width: 728px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style each of the sides 
+  with a fixed width and height */
+.slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    height: 510px;
+    width: 728px;
+    text-wrap: wrap;
+    padding: 2em;
+
+}
+
+/* Add animation to the slides */
+.slide-wrapper {
+
+    /* Calculate the total width on the
+    basis of number of slides */
+    width: calc(728px * 4);
+
+    /* Specify the animation with the
+    duration and speed */
+    animation: slide 20s ease infinite;
+}
+
+/* Set the background color
+  of each of the slides */
+.slide:nth-child(1) {
+    background: linear-gradient(to right, blue, rgb(106, 143, 243));
+}
+
+.slide:nth-child(2) {
+    background: linear-gradient(to right, blue, rgb(106, 143, 243));
+
+}
+
+.slide:nth-child(3) {
+    background: linear-gradient(to right, blue, rgb(106, 143, 243));
+
+}
+
+.slide:nth-child(4) {
+    background: linear-gradient(to right, blue, rgb(106, 143, 243));
+
+}
+
+/* Define the animation 
+  for the slideshow */
+@keyframes slide {
+
+    /* Calculate the margin-left for 
+    each of the slides */
+    20% {
+        margin-left: 0px;
+    }
+
+    40% {
+        margin-left: calc(-728px * 1);
+    }
+
+    60% {
+        margin-left: calc(-728px * 2);
+    }
+
+    80% {
+        margin-left: calc(-728px * 3);
+    }
+}
