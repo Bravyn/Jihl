@@ -1,20 +1,47 @@
 <!doctype html>
 <html>
+
 <head>
-    <title>Jihl</title>
-    <link rel = "stylesheet" href="{{ url_for('static', filename = 'style.css') }}">
+    <title>Marntl</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'style.css') }}">
+    <script src="{{ url_for ('static', filename = 'script.js')}}"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
 </head>
+
 <body>
-{% if person %}
-  <h1>Hello {{person.capitalize()}} </h1>
-{% else %}
-  <h1>Marnt</h1>
-{% endif %}
-<div class="form">
-    <form method="POST" class="form">
-        <input type = "text" name = "inputBox" placeholder="Type your name here">
-        <input type="submit" value = "Get Started">
-    </form>
-</div>
+    <nav class="navbar">
+        <div class="logo">Marntl</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+            &#9776;
+        </div>
+    </nav>
+    <section>
+        <div class="sect1">
+            <h1>Leveraging AI for Your Cyber Security Needs</h1>
+        </div>
+        <div class="sect2">
+            <p> By leveraging machine learning algorithms, we provide real-time threat
+                detection and automated incident response, enabling organizations to proactively identify
+                vulnerabilities and mitigate risks. Our solution analyzes vast amounts of data to uncover patterns and
+                anomalies, allowing security teams to focus on strategic tasks rather than routine monitoring. This not
+                only streamlines operations but also strengthens overall security posture, ensuring that enterprises
+                stay one step ahead of evolving cyber threats.
+            </p>
+
+            <button class="button-31" role="button">Sign Up Now</button>
+
+        </div>
+
+    </section>
+
 </body>
+
 </html>
