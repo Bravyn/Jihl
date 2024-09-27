@@ -32,21 +32,18 @@
             <!-- Define each of the slides
          and write the content -->
 
-         {% for slide in range(0,3)%}
+         {% for slide in range(0,4)%}
+         
 
             <div class="slide">
-                <h1 class="slide-number">
-                   {{tagline[0]}}
-                </h1>
+                <img src="{{ url_for('static', filename = 'im.jpg')}}">
             </div>
         {% endfor %}
         </div>
     </div>
        
         <div class="sect2">
-            <p> By leveraging machine learning algorithms, we provide real-time threat
-                detection and automated incident response, enabling organizations to proactively identify
-                vulnerabilities and mitigate risks. Our solution analyzes vast amounts of data to uncover patterns and
+            <p>  Our solution analyzes vast amounts of data to uncover patterns and
                 anomalies, allowing security teams to focus on strategic tasks rather than routine monitoring. This not
                 only streamlines operations but also strengthens overall security posture, ensuring that enterprises
                 stay one step ahead of evolving cyber threats.
