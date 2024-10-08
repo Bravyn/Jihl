@@ -15,7 +15,7 @@
         <div class="logo">Marntl</div>
         <ul class="nav-links">
             <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="signup.html">About</a></li>
             <li><a href="#">Services</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
@@ -32,11 +32,11 @@
             <!-- Define each of the slides
          and write the content -->
 
-         {% for slide in range(0,4)%}
+         {% for img in image%}
          
 
             <div class="slide">
-                <img src="{{ url_for('static', filename = 'im.jpg')}}">
+                <img src="{{ url_for('static', filename = img )}}">
             </div>
         {% endfor %}
         </div>
@@ -53,6 +53,9 @@
 
         </div>
 
+    </section>
+    <section>
+        <h1>Part 2</h1>
     </section>
 
 </body>
